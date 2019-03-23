@@ -25,9 +25,11 @@ public final class Student {
 	public int getAge() {
 		return age;
 	}
+	//make date read only
 	public Date getDob() {
 		return new Date(dob.getTime());
 	}
+	//Make arraylist read only
 	public List<Subject> getMarks() {
 		return new ArrayList<Subject>(marks);
 	}
